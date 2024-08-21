@@ -1,4 +1,4 @@
-import tools
+from widget import tools
 while True: 
     name=str(input('請輸入姓名:'))
     try:
