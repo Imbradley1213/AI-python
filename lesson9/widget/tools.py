@@ -37,3 +37,27 @@ class MyClass():
             return "中度肥胖"
         else:
             return "重度肥胖" 
+        
+class TESTBMI():
+    def __init__(self,name:str,h:float,w:float):
+        self.name=name
+        self.h=h
+        self.w=w
+    def username(self)->str:
+        return f'{self.name}你好'
+    def userbmi(self)->float:
+        return round(self.w/((self.h*0.01)**2),ndigits=2)
+    def status(self)->str:
+        BMI=self.userbmi()
+        if BMI<18.5:
+            return "體重:過輕"
+        elif BMI<24:
+            return "體重:正常"
+        elif BMI<27:
+            return "體重:過重"
+        elif BMI<30:
+            return "體重:輕度肥胖"
+        elif BMI<35:
+            return "體重:中度肥胖"
+        else:
+            return "體重:重度肥胖"
