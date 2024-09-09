@@ -1,4 +1,7 @@
 pyinputplus
 requests
 pydantic
+matplotlib
+numpy
+pandas
 #pip install -r requirements.txt
